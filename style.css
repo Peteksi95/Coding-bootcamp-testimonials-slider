@@ -1,0 +1,101 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 35%;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.text-container {
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 60%;
+    z-index: 2;
+    margin-left: 7.5%;
+}
+
+.img-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 50%;
+    margin-right: 7.5%;
+}
+
+img {
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    width: 3.5em;
+    padding: 1em;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn-container {
+    position: absolute;
+    top: 94.5%;
+    left: 15%;
+    display: flex;
+    border-radius: 50px;
+    box-shadow: -20px 10px 50px -15px hsl(240, 16%, 48%), 20px 10px 50px -15px hsl(240, 16%, 48%);
+}
+
+#prev {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#next {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+p {
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+}
+
+#name {
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(240, 38%, 20%);
+}
+
+#title {
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+.attribution {
+    display: none;
+}
