@@ -22,7 +22,7 @@ main {
     background-repeat: no-repeat;
     position: relative;
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     padding-bottom: 2em;
 }
 
@@ -135,6 +135,7 @@ p {
 
     main {
         width: 100%;
+        height: 110vh;
         background-size: 70%;
     }
 
