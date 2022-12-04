@@ -4,8 +4,8 @@
 
 body {
     background-image: url(/images/pattern-bg.svg);
-    background-repeat: no-repeat;
     background-position: right 47.5%;
+    background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     display: flex;
@@ -17,12 +17,13 @@ body {
 }
 
 main {
+    background-image: url(images/pattern-curve.svg);
+    background-position:  left bottom;
+    background-repeat: no-repeat;
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    padding-bottom: 2em;
 }
 
 .text-container {
@@ -134,7 +135,7 @@ p {
 
     main {
         width: 100%;
-        background-size: 75%;
+        background-size: 70%;
     }
 
     .container {
