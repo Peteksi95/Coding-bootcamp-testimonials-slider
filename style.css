@@ -137,6 +137,10 @@ p {
         background-size: 75%;
     }
 
+    .container {
+        position: absolute;
+    }
+
     .img-container {
         position: relative;
         top: 0;
