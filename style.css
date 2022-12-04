@@ -159,8 +159,8 @@ p {
 
     .btn-container {
         position: absolute;
-        left: 75%;
-        transform: translateX(-75%);
+        left: 80%;
+        transform: translateX(-80%);
     }
 
     button {
