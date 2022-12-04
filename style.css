@@ -5,7 +5,7 @@
 body {
     background-image: url(/images/pattern-bg.svg);
     background-repeat: no-repeat;
-    background-position: right 35%;
+    background-position: right 47.5%;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     display: flex;
@@ -47,13 +47,14 @@ main {
 }
 
 img {
-    border-radius: 5px;
+    border-radius: 7.5px;
 }
 
 button {
     background-color: white;
     width: 3.5em;
     padding: 1em;
+    padding-bottom: 0.75em;
     border: none;
 }
 
@@ -70,12 +71,12 @@ button:hover {
     box-shadow: -20px 10px 50px -15px hsl(240, 16%, 48%), 20px 10px 50px -15px hsl(240, 16%, 48%);
 }
 
-#prev {
+.prev {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
-#next {
+.next {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -85,17 +86,109 @@ p {
     font-weight: 300;
 }
 
-#name {
+.person {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+}
+
+.name {
     font-size: 25px;
     font-weight: 700;
     color: hsl(240, 38%, 20%);
 }
 
-#title {
+.title {
     color: hsl(240, 18%, 77%);
+    font-size: 25px;
     font-weight: 500;
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+.hide {
+    visibility: hidden;
+}
+
 .attribution {
-    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 22px;
+        background-size: 87%;
+        background-position: 50% 5%;
+    }
+
+    main {
+        width: 100%;
+        background-size: 75%;
+    }
+
+    .img-container {
+        position: relative;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        margin: 3em 0 3em 0;
+        transform: translate(-65%, 0%);
+        z-index: 1;
+    }
+
+    img {
+      max-width: 135%;
+    }
+
+    .btn-container {
+        position: absolute;
+        left: 75%;
+        transform: translateX(-75%);
+    }
+
+    button {
+        margin: -1px;
+    }
+
+    .btn-container img {
+        width: 12.5px;
+        height: auto;
+    }
+
+    .text-container {
+        position: static;
+        background-position: center top;
+        max-width: 100%;
+        margin: 0 2em;
+        padding-top: 0.5em;
+        z-index: 1;
+        transform: translateY(0%);
+        text-align: center;
+    }
+
+    .person {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .name, .title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .attribution {
+        display: none;
+    }
 }
